@@ -25,5 +25,8 @@ let default = () => {
         {"toggle"->React.string}
       </button>
     </div>
+    <Next.Link href="/test">
+      <a className="text-blue-500"> {"Open test page"->React.string} </a>
+    </Next.Link>
   </section>
 }
