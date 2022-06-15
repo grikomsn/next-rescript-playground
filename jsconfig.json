@@ -1,0 +1,9 @@
+{
+  "extends": "@vercel/style-guide/typescript",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve"
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.jsx"]
+}

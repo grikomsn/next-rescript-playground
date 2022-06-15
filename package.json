@@ -1,0 +1,29 @@
+{
+  "name": "next-rescript-playground",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rescript && next build",
+    "clean": "rescript clean",
+    "dev": "run-p dev:*",
+    "dev:next": "next dev",
+    "dev:rescript": "rescript build -w"
+  },
+  "dependencies": {
+    "@rescript/react": "^0",
+    "autoprefixer": "^10",
+    "next": "^12",
+    "next-transpile-modules": "^9",
+    "postcss": "^8",
+    "react": "^18",
+    "react-dom": "^18",
+    "rescript": "^9",
+    "tailwindcss": "^3"
+  },
+  "devDependencies": {
+    "@vercel/style-guide": "^3",
+    "gentype": "^4",
+    "npm-run-all2": "^6"
+  },
+  "prettier": "@vercel/style-guide/prettier",
+  "private": true
+}

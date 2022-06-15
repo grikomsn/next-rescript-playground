@@ -1,0 +1,19 @@
+{
+  "name": "next-rescript-playground",
+  "bs-dependencies": ["@rescript/react"],
+  "bs-dev-dependencies": [],
+  "namespace": false,
+  "package-specs": {
+    "in-source": true,
+    "module": "es6"
+  },
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": [
+    { "dir": "pages", "subdirs": true },
+    { "dir": "store", "subdirs": true },
+    { "dir": "ui", "subdirs": true },
+    { "dir": "utils", "subdirs": true }
+  ]
+}

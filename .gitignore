@@ -1,0 +1,15 @@
+*.log
+*.swo
+*.swp
+.bsb.lock
+.DS_Store
+.merlin
+.next/
+lib/bs/
+node_modules/
+pages/**/*.js
+store/**/*.js
+ui/**/*.js
+utils/**/*.js
+
+!.gitkeep
