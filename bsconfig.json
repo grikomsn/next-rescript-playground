@@ -2,6 +2,14 @@
   "name": "next-rescript-playground",
   "bs-dependencies": ["@rescript/react"],
   "bs-dev-dependencies": [],
+  "gentypeconfig": {
+    "debug": {
+      "all": false,
+      "basic": false
+    },
+    "language": "untyped",
+    "shims": {}
+  },
   "namespace": false,
   "package-specs": {
     "in-source": true,
@@ -11,6 +19,7 @@
     "react-jsx": 3
   },
   "sources": [
+    { "dir": "bindings", "subdirs": true },
     { "dir": "pages", "subdirs": true },
     { "dir": "store", "subdirs": true },
     { "dir": "ui", "subdirs": true },

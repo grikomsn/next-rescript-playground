@@ -7,6 +7,7 @@
 .next/
 lib/bs/
 node_modules/
+bindings/**/*.js
 pages/**/*.js
 store/**/*.js
 ui/**/*.js
