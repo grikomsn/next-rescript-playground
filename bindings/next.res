@@ -4,11 +4,11 @@ module Link = {
   external make: (
     ~href: string,
     @as("as") ~_as: string=?,
-    ~replace: option<bool>=?,
-    ~scroll: option<bool>=?,
-    ~shallow: option<bool>=?,
-    ~passHref: option<bool>=?,
-    ~prefetch: option<bool>=?,
+    ~replace: bool=?,
+    ~scroll: bool=?,
+    ~shallow: bool=?,
+    ~passHref: bool=?,
+    ~prefetch: bool=?,
     ~children: React.element,
   ) => React.element = "default"
 }
