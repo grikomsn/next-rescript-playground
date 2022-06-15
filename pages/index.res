@@ -26,7 +26,10 @@ let default = () => {
       </button>
     </div>
     <Next.Link href="/test">
-      <a className="text-blue-500"> {"Open test page"->React.string} </a>
+      <a className="text-blue-500 block"> {"Open test page"->React.string} </a>
+    </Next.Link>
+    <Next.Link href="/test" _as="/test2">
+      <a className="text-blue-500 block"> {"Open test as test2 page"->React.string} </a>
     </Next.Link>
   </section>
 }
