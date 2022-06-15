@@ -1,8 +1,8 @@
 let default = () => {
   open Hooks
 
-  let state = useBoolean()
-  let stateText = switch state["value"] {
+  let {value, disable, enable, toggle} = useBoolean()
+  let stateText = switch value {
   | true => "enabled"
   | false => "disabled"
   }
@@ -14,16 +14,13 @@ let default = () => {
     </p>
     <div> {"State: "->React.string} {stateText->React.string} </div>
     <div className="flex items-center space-x-2">
-      <button
-        className="border px-4 py-1 rounded hover:bg-gray-300/30" onClick={_ => state["disable"]()}>
+      <button className="border px-4 py-1 rounded hover:bg-gray-300/30" onClick={_ => disable()}>
         {"disable"->React.string}
       </button>
-      <button
-        className="border px-4 py-1 rounded hover:bg-gray-300/30" onClick={_ => state["enable"]()}>
+      <button className="border px-4 py-1 rounded hover:bg-gray-300/30" onClick={_ => enable()}>
         {"enable"->React.string}
       </button>
-      <button
-        className="border px-4 py-1 rounded hover:bg-gray-300/30" onClick={_ => state["toggle"]()}>
+      <button className="border px-4 py-1 rounded hover:bg-gray-300/30" onClick={_ => toggle()}>
         {"toggle"->React.string}
       </button>
     </div>
